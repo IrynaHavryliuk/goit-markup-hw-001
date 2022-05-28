@@ -1,0 +1,183 @@
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+.web {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #2196F3;
+}
+.studio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: black;
+}
+.logo {
+    text-decoration: none;
+}
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+.header-tel,
+.header-mail
+{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.33;
+        letter-spacing: 0.02em;
+        color: #757575;
+}
+.header-link:hover, 
+.header-tel:hover,
+.header-mail:hover
+{
+color: #2196F3;
+}
+.hero {
+    background: #2F303A;
+}
+.hero-title 
+{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+color: #FFFFFF;
+}
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: #FFFFFF;
+    background: #2196F3;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #188CE8;
+}
+.feature-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+color: #212121;
+}
+.feature-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+}
+.works-title,
+.teams-title
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: #212121;
+}
+.team-card {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #212121;
+}
+.team-card-prof {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #757575;
+}
+.studio-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: white;
+}
+.address-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: normal;
+}
+.mail-footer,
+.tel-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-style: normal;
+}
+.footer-back {
+  font-style: normal;  
+  background: #2F303A;
+}
+.address-footer:hover,
+.mail-footer:hover,
+.tel-footer:hover
+ {
+    color: #2196F3;
+}
+.but-list{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,63;
+    color: #212121;
+}
+.but-li {
+    width: 103px;
+    height: 38px;
+    left: 865px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.but-li:hover {
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.but-list:hover {
+    font-size: 16px;
+    line-height: 1,88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+     color: #212121;
+}
+.portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,88;
+    color: #757575;
+}
+.but-title {
+  color: #fff;
+}
