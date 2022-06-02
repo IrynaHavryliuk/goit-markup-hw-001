@@ -16,6 +16,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color: #2196F3;
+    letter-spacing: 0.03em;
 }
 .studio {
     font-family: 'Raleway';
@@ -24,6 +25,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color: black;
+    letter-spacing: 0.03em;
 }
 .logo {
     text-decoration: none;
@@ -62,6 +64,7 @@ font-size: 44px;
 line-height: 1.36;
 color: #FFFFFF;
 text-transform:uppercase
+letter-spacing: 0.06em;
 }
 .btn {
     font-weight: 700;
@@ -71,6 +74,7 @@ text-transform:uppercase
     background: #2196F3;
     cursor: pointer;
     font-family: 'Roboto';
+    letter-spacing: 0.06em;
 }
 .btn:hover {
     background-color: #188CE8;
@@ -80,13 +84,15 @@ text-transform:uppercase
     font-size: 14px;
     line-height: 1.14;
     color: #212121;
-    text-transform:uppercase
+    text-transform:uppercase;
+    letter-spacing: 0.03em;
 }
 .feature-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: #757575;
+    letter-spacing: 0.03em;
 }
 .works-title,
 .teams-title
@@ -95,6 +101,7 @@ text-transform:uppercase
     font-size: 36px;
     line-height: 1.17;
     color: #212121;
+    letter-spacing: 0.03em;
 }
 .team-card {
     font-weight: 500;
@@ -107,6 +114,7 @@ text-transform:uppercase
     font-size: 16px;
     line-height: 1.19;
     color: #757575;
+    letter-spacing: 0.03em;
 }
 .studio-footer {
     font-family: 'Raleway';
@@ -115,6 +123,7 @@ text-transform:uppercase
     font-size: 26px;
     line-height: 1.19;
     color: white;
+    letter-spacing: 0.03em;
 }
 .address-footer {
     font-size: 14px;
@@ -122,6 +131,7 @@ text-transform:uppercase
     color: #FFFFFF;
     text-decoration: none;
     font-style: normal;
+    letter-spacing: 0.03em;
 }
 .mail-footer,
 .tel-footer {
@@ -130,6 +140,7 @@ text-transform:uppercase
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal;
+    letter-spacing: 0.03em;
 }
 .footer-back {
   font-style: normal;  
@@ -145,11 +156,19 @@ text-transform:uppercase
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,63;
+    line-height: 1.63;
     color: #212121;
+    letter-spacing: 0.03em;
 }
 .but-li {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    color: #212121;
     cursor: pointer;
+    background: #F5F4FA;
+    letter-spacing: 0.03em;
 }
 .but-li:hover {
     background: #2196F3;
@@ -158,21 +177,25 @@ text-transform:uppercase
 }
 .but-list:hover {
     font-size: 16px;
-    line-height: 1,88;
+    line-height: 1.88;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    letter-spacing: 0.03em;
+    
 }
 .portfolio-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-     color: #212121;
+    color: #212121;
+    letter-spacing: 0.06em;
 }
 .portfolio-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1,88;
+    line-height: 1.88;
     color: #757575;
+    letter-spacing: 0.03em;
 }
 .but-title {
   color: #fff;
