@@ -11,6 +11,7 @@ p, h1, h2, h3, h4, ul{
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 0;
 }
 :root {
     --primary-text-color: rgba(0, 0, 0, 0.8);
@@ -39,36 +40,44 @@ body {
    width: 1230px;
    padding-left: 15px;
    padding-right: 15px;
+   padding-top: 40px;
+   padding-bottom: 40px;
    margin: 0 auto;
    outline: 1px solid red;
    justify-content: space-between;
+   border-bottom: 1px solid #ECECEC;
 
 }
-.conteiner-hero {
+.hero {
+    font-family: 'Roboto';
+    padding-top: 200px;
+    padding-bottom: 280px;
     width: 1230px;
     margin: 0 auto;
     outline: 1px solid red;
     background: #2F303A;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 280px;
 }
 .title-list {
     display: flex;
 }
-
+.button-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .button-list {
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     outline: 1px solid red;
-    padding-top: 94px;
-    padding-bottom: 94px;
+
     }
 .header-nav {
     display: flex;
     align-items: center;
+    margin: 0;
+    padding: 0;
     }
 
 .web {
@@ -103,19 +112,20 @@ body {
     color: #212121;
     
 }
+
 .header-list  {
     display: flex;
     margin-left: 93px;
+    width:294px;
+    align-items: center;
+    margin-right: 300px;
+    
 }
-.header-list-item {
-    display: block;
-    margin-right: 50px;
-}
-
 
 .header-nav .link {
     outline: 1px solid red;
     margin-right: 50px;
+    display: inline-block;
 }
 .header-tel,
 .header-mail
@@ -127,8 +137,11 @@ body {
     line-height: 1.33;
     letter-spacing: 0.02em;
     color: #757575;
-    margin-left: auto;
 }
+.header-mail {
+    padding-left: 50px;
+}
+
 .header-link:hover, 
 .header-tel:hover,
 .header-mail:hover
@@ -139,6 +152,7 @@ color: #2196F3;
 .hero-title 
 { margin-top: 0;
 margin-bottom: 0;
+font-family: 'Roboto';
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -173,17 +187,22 @@ display: flex;
 .but-list:last-child {
     margin-right: 0px;
 }
+.conteiner-title-section {
+    padding-top: 94px;
+}
 .conteiner-title { 
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     outline: 1px solid red;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    display: flex;
+
 }
 .btn {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -192,19 +211,25 @@ display: flex;
     cursor: pointer;
     font-family: 'Roboto';
     letter-spacing: 0.06em;
+    margin-top: 30px;
+    border-radius: 4px;
+    
 }
 .btn:hover {
     background-color: #188CE8;
 }
 .feature-title {
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     color: #212121;
     text-transform:uppercase;
     letter-spacing: 0.03em;
+    padding-bottom: 10px;
 }
 .feature-text{
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -220,17 +245,18 @@ display: flex;
     color: #212121;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin-bottom: 50px;
 }
 .conteiner-works,
 .conteiner-teams {
+    font-family: 'Roboto';
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     outline: 1px solid red;
-    padding-bottom: 94px;
+    margin-top: 94px;
+    margin-bottom: 94px;
     
 }
 .conteiner-teams {
@@ -238,18 +264,24 @@ background: #F5F4FA;
 }
 
 .team-card {
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     color: #212121;
-
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 .team-card-prof {
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     color: #757575;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    text-align: center;
 }
 .teams-list {
     display: flex;
@@ -261,7 +293,10 @@ background: #F5F4FA;
     font-size: 26px;
     line-height: 1.19;
     color: white;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;  
+}
+.footer-logo {
+    margin-bottom: 20px;
 }
 .address-footer {
     font-size: 14px;
@@ -270,6 +305,10 @@ background: #F5F4FA;
     text-decoration: none;
     font-style: normal;
     letter-spacing: 0.03em;
+
+}
+.address-footer-li {
+    margin-bottom: 9px;
 }
 .mail-footer,
 .tel-footer {
@@ -280,8 +319,14 @@ background: #F5F4FA;
     font-style: normal;
     letter-spacing: 0.03em;
 }
+.mail-footer-li {
+    margin-bottom: 9px;
+}
 .footer-back {
-  font-style: normal;  
+  font-style: normal; 
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
 }
 .address-footer:hover,
 .mail-footer:hover,
@@ -295,23 +340,12 @@ background: #F5F4FA;
     justify-content: center;
 }
 .but-list {
-    border-radius: 4px;
-    display: inline-block;
-    min-width: 145px;
-    min-height: 38px;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    color: #212121;
-    letter-spacing: 0.03em; 
-    color: var(--title-text-color); 
-    background-color: var(--primary-whyte-color);
-    text-align: center;
-    border: 1px solid transparent;
+   x solid transparent;
+    margin: 0;
 }
 .but-li {
     font-family: 'Roboto';
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -319,8 +353,12 @@ background: #F5F4FA;
     cursor: pointer;
     background: #F5F4FA;
     letter-spacing: 0.03em;
-    text-align: center;
-    padding: 6px 22px;
+    text-align: center; 
+    border: none;
+    margin: 0;
+    display: inline-block;
+    border-radius: 4px;
+    border-color: transparent;
 }
 .but-li:hover {
     background: #2196F3;
@@ -335,12 +373,20 @@ background: #F5F4FA;
     letter-spacing: 0.03em;
     
 }
+.portfolio {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
 .portfolio-title {
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     color: #212121;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 .portfolio-list {
     display: flex;
@@ -362,6 +408,7 @@ background: #F5F4FA;
 
 
 .portfolio-text {
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
