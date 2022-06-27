@@ -328,6 +328,11 @@ display: flex;
 .conteiner-teams-section {
     background: #F5F4FA;
 }
+.works-section,
+.conteiner-teams-section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
 .conteiner-works,
 .conteiner-teams {
     font-family: 'Roboto';
@@ -336,8 +341,7 @@ display: flex;
     padding-right: 15px;
     margin: 0 auto;
     outline: 1px solid red;
-    padding-top: 94px;
-    padding-bottom: 94px;   
+      
 }
 .item {
 font-size: 0;
@@ -365,8 +369,36 @@ outline: 1px solid red;
     display: flex;
     margin: 0;
     justify-content: center;
-    padding-left: 32px;
-    padding-right: 32px;
+    align-items: center;
+}
+.actions-team li{
+    padding-right: 10px;
+}
+.actions-team li:nth-child(1){
+    margin-left: 32px;
+}
+.actions-team li:nth-child(4) {
+    margin-right: 32px;
+    padding-right: 0;
+}
+.icon-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    padding-right: 10px;
+    background-size: contain;
+}
+.icon-team:hover {
+background-color: #2196F3;
+border-radius: 50%;
 }
 .team-card-prof {
     font-family: 'Roboto';
@@ -402,7 +434,15 @@ margin-bottom: 50px;
     justify-content: center;
    
 }
-.clients-button {
+.clients-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-list li:nth-child(1){
+    padding-left: 15px;
+}
+.button-icon-clients {
     display: flex;
     flex-wrap: wrap;
     background-color: #fff;
@@ -419,15 +459,15 @@ margin-bottom: 50px;
     fill: #AFB1B8;
     margin-right: 30px;
 
-    outline: 1px solid red;
 }
 
-.clients-button:hover {
+.button-icon-clients:hover {
     fill: #2196F3;
 }
-.button-icon {
-    display: none;
-}
+/* .button-icon {
+    display: flex;
+    padding-right: 10px;
+} */
 .button-icon:hover {
     fill: #2196F3;
 }
@@ -665,10 +705,13 @@ margin-bottom: 50px;
     background-repeat: no-repeat;
     cursor: pointer;
     background-position: center;
-    flex-direction: column; 
+    fill: #AFB1B8;
+  
+
 } 
 .button-icon:hover {
-    fill:#fff;
+   
+    fill:  #FFFFFF;
 }
 .actions-team-list {
     display: flex;
