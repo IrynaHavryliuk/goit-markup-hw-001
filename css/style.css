@@ -51,13 +51,8 @@ body {
    align-items: center;
    width: 1200px;
    padding-left: 15px;
-   padding-right: 15px;
-   
+   padding-right: 15px; 
    margin: 0 auto;
-   /* outline: 1px solid red; */
-   /* justify-content: space-between; */
-   
-
 }
 .hero {
     font-family: 'Roboto';
@@ -65,7 +60,6 @@ body {
     padding-bottom: 200px;
     /* width: 1200px; */
     margin: 0 auto;
-    outline: 1px solid red;
     background: #2F303A;
     text-align: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -112,8 +106,6 @@ background-image: url(../images/astronaut.svg);
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 1px solid red;
-
     }
 .header-nav {
     display: flex;
@@ -174,25 +166,17 @@ background-image: url(../images/astronaut.svg);
     color: #757575;
 }
 .header-mail {
-    margin-left: 10px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
-/* .header-tel::before {
-    display: inline-block;
-    content: " ";
-    width: 10px;
-    height: 16px;
-    background-image: url(../images/Vector.svg);
-    background-size: contain;
-    margin-right: 10px;
-} */
+
 .header-tel {
-    padding-left: 10px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
 }
-/* .button-contakts {
-    padding: 0;
-    border: none;
-    fill: #757575;
-} */
+
 .mail {
     display: block;
     border: none;
@@ -202,27 +186,26 @@ background-image: url(../images/astronaut.svg);
     height: 12px;
     background-size: contain;
     fill: #757575;
-    margin-left: auto;
+    fill: currentColor;
+    margin-right: 10px;
     
 }
-.telephon:hover {
-fill: #2196F3;
-}
-.mail:hover {
-fill: #2196F3;
-}
+
 .telephon {
     display: block;
     width: 10px;
     height: 16px;
     background-size: contain;
     fill: #757575;
-    margin-left: 30px;
+    fill: currentColor;
+    margin-right: 10px;
 }
 .button-contakts:hover,
 .header-link:hover, 
 .header-tel:hover,
-.header-mail:hover
+.header-mail:hover,
+.header-tel:focus,
+.header-mail:focus
 {
 color: #2196F3;
 }
@@ -244,9 +227,7 @@ letter-spacing: 0.06em;
 .works-list {
 display: flex;
 }
-/* .teams-list li{
-    margin-right: 30px;
-} */
+
 .works-list .item:last-child {
     margin-right: 0px;
 }
@@ -273,7 +254,6 @@ display: flex;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 1px solid red;
 
 }
 .btn {
@@ -339,16 +319,13 @@ display: flex;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
-    outline: 1px solid red;
-      
+    margin: 0 auto;   
 }
 .item {
 font-size: 0;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 margin-right: 30px;
-outline: 1px solid red;
 }
 .team {
     padding-top: 30px;
@@ -381,24 +358,19 @@ outline: 1px solid red;
     margin-right: 32px;
     padding-right: 0;
 }
-.icon-team {
+.t-icon-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
     width: 44px;
     height: 44px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0;
-    margin: 0;
     border-radius: 50%;
-    padding-right: 10px;
-    background-size: contain;
+    color: #757575;
 }
-.icon-team:hover {
+.t-icon-box:hover,
+.t-icon-box:focus {
 background-color: #2196F3;
-border-radius: 50%;
+color: #fff;
 }
 .team-card-prof {
     font-family: 'Roboto';
@@ -433,7 +405,7 @@ margin-bottom: 50px;
     display: flex;
     justify-content: center;
    
-}
+} 
 .clients-list li{
     display: flex;
     justify-content: center;
@@ -441,127 +413,40 @@ margin-bottom: 50px;
 }
 .clients-list li:nth-child(1){
     padding-left: 15px;
-}
-.button-icon-clients {
+} 
+
+.clients-icon {
     display: flex;
-    flex-wrap: wrap;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     border-radius: 4px;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-position: center;
     border: 1px solid #AFB1B8;
-    fill: #AFB1B8;
+    cursor: pointer;
     margin-right: 30px;
-
+    color: #757575;
 }
 
-.button-icon-clients:hover {
+.button-icon-clients {   
+    background-color: #fff;
+    fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+    color: #2196F3;
     fill: #2196F3;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
 }
-/* .button-icon {
-    display: flex;
-    padding-right: 10px;
-} */
+.button-icon-clients:hover,
 .button-icon:hover {
     fill: #2196F3;
 }
 
-/* .client-1 {
-    padding: 0;
-    border: none;
-    display: block;
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    background-image: url(../images/Union\ \(2\).svg);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: 106px 60px;
-    background-position: center;
-    background-color: #fff;
-    border: 1px solid #AFB1B8;
-} */
-/* .client-2 {
-    padding: 0;
-    border: none;
-    display: block;
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    background-image: url(../images/Union\ \(1\)\ \(1\).svg);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: 106px 60px;
-    background-position: center;
-    background-color: #fff;
-    border: 1px solid #AFB1B8;
-} */
-/* .client-3 {
-    padding: 0;
-    border: none;
-    display: block;
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    background-image: url(../images/group\ \(1\)\ \(1\).svg);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: 106px 60px;
-    background-position: center;
-    background-color: #fff;
-    border: 1px solid #AFB1B8;
-} */
-/* .client-4 {
-    padding: 0;
-    border: none;
-    display: block;
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    background-image: url(../images/group\ \(2\)\ \(1\).svg);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: 106px 60px;
-    background-position: center;
-    background-color: #fff;
-    border: 1px solid #AFB1B8;
-} */
-/* .client-5 {
-    padding: 0;
-    border: none;
-    display: block;
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    background-image: url(../images/group\ \(3\)\ \(1\).svg);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: 106px 60px;
-    background-position: center;
-    background-color: #fff;
-    border: 1px solid #AFB1B8;
-} */
-/* .client-6 {
-    padding: 0;
-    border: none;
-    display: block;
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    background-image: url(../images/group\ \(4\).svg);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: 106px 60px;
-    background-position: center;
-    background-color: #fff;
-    border: 1px solid #AFB1B8;
-} */
 .studio-footer {
     font-family: 'Raleway';
     font-style: normal;
@@ -610,12 +495,7 @@ margin-bottom: 50px;
     margin: 0;
     list-style: none;
 }
-/* .actions-team li {
-    padding-right: 10px;
-}
-.actions-team li:last-child {
-    padding-right: 0px;
-} */
+
 .actions li {
     padding-right: 10px;
 }
@@ -623,63 +503,18 @@ margin-bottom: 50px;
 .actions li:last-child {
     padding-right: 0px;
 }
-/* .actions-team .icon-instagram {
-    margin: 0;
-    padding: 0;
-    border: none;
-    display: block;
-    width: 44px;
-    height: 44px;
-    background-image: url(..//images/instagram.svg);
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    cursor: pointer;
-    background-size: 20px 20px;
-    background-position: center;
-    background-color: #fff;
-    fill: #AFB1B8;
-    
-} */
+
 .icon-instagram:hover {
     fill: #fff;
 }
 .actions-team button:hover {
     background-color: #2196F3;
     color: #fff;
+    
 }
 .actions button:hover {
     background-color: #2196F3;
 }
-/* .actions-team .icon-twitter {
-    padding: 0;
-    border: none;
-    display: block;
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/twitter.svg);
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    cursor: pointer;
-    background-size: 20px 20px;
-    background-position: center;
-    background-color: #fff;
-
-} */
-/* .actions-team .icon-facebook {
-    padding: 0;
-    border: none;
-    display: block;
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/facebook.svg);
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    cursor: pointer;
-    background-size: 20px 20px;
-    background-position: center;
-    background-color: #fff;
-
-} */
 .button {
     display: flex;
     padding: 0;
@@ -689,7 +524,6 @@ margin-bottom: 50px;
     height: 44px;
     background-position: center;
     margin-right: 10px;
-    outline: 1px solid red;
     border-radius: 50%;
     flex-direction: column;
     
@@ -699,19 +533,11 @@ margin-bottom: 50px;
   
 }
 .button-icon {
-    padding: 0;
-    border: none;
-    display: flex;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-position: center;
-    fill: #AFB1B8;
-  
-
+    fill: #AFB1B8;;
 } 
-.button-icon:hover {
-   
-    fill:  #FFFFFF;
+.button-icon:hover,
+.button-icon:focus {
+   fill:  currentColor
 }
 .actions-team-list {
     display: flex;
@@ -774,6 +600,7 @@ margin-bottom: 50px;
     background-size: 20px 20px;
     background-position: center;
 }
+
 .mail-footer,
 .tel-footer {
     font-size: 14px;
@@ -805,7 +632,6 @@ margin-bottom: 50px;
     justify-content: center;
 }
 .but-list {
-    /* outline: 1px solid transparent; */
     margin: 0;
 }
 .but-li {
@@ -826,6 +652,7 @@ margin-bottom: 50px;
     border-color: transparent;
 }
 .but-li:hover {
+    color: #fff;
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -873,7 +700,10 @@ margin-bottom: 50px;
 .portfolio-list-li:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
-
+.portfolio-list-li:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
 
 .portfolio-text {
     font-family: 'Roboto';
@@ -892,6 +722,4 @@ margin-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 1px solid red;
-    
 }
