@@ -37,7 +37,7 @@
           >
           <ul class="header-list">
             <li class="header-list-item">
-              <a href="" class="header-link link">Студия</a>
+              <a href="" class="header-link curent link">Студия</a>
             </li>
             <li class="header-list-item">
               <a href="portfolio.html" class="header-link link">Портфолио</a>
@@ -74,7 +74,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="btn">Заказать услугу</button>
+          <button type="button" class="btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="conteiner-title-section">
@@ -116,28 +118,43 @@
           <h2 class="works-title title">Чем мы занимаемся</h2>
           <ul class="works-list">
             <li class="item">
-              <img
-                src="./images/img-3.jpg"
-                alt="Сайты"
-                width="370"
-                height="294"
-              />
+              <div class="conteiner-works-img">
+                <img
+                  src="./images/img-3.jpg"
+                  alt="Сайты"
+                  width="370"
+                  height="294"
+                />
+              </div>
+              <div class="works-actions-conteiner">
+                <p class="works-actions">Десктопные приложения</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/img-4.jpg"
-                alt="Мобильные приложения"
-                width="370"
-                height="294"
-              />
+              <div class="conteiner-works-img">
+                <img
+                  src="./images/img-4.jpg"
+                  alt="Мобильные приложения"
+                  width="370"
+                  height="294"
+                />
+              </div>
+              <div class="works-actions-conteiner">
+                <p class="works-actions">Мобильные приложения</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/img-5.jpg"
-                alt="Приложения для планшетов"
-                width="370"
-                height="294"
-              />
+              <div class="conteiner-works-img">
+                <img
+                  src="./images/img-5.jpg"
+                  alt="Приложения для планшетов"
+                  width="370"
+                  height="294"
+                />
+              </div>
+              <div class="works-actions-conteiner">
+                <p class="works-actions">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -398,6 +415,19 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="modal-button" data-modal-close>
+            <svg class="icon-close">
+              <use
+                href="./images/sprite.svg#icon-close"
+                weight="18"
+                height="18"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
     <footer class="footer-back">
       <div class="footer-conteiner">
@@ -439,5 +469,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

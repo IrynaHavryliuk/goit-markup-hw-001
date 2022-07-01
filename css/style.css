@@ -106,6 +106,7 @@ background-image: url(../images/astronaut.svg);
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    
     }
 .header-nav {
     display: flex;
@@ -141,14 +142,34 @@ background-image: url(../images/astronaut.svg);
    
 }
 .header-link {
+    position: relative;
     display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.02em;
     color: #212121; 
+    
 }
-
+.curent::after {
+    content: "";
+    position: absolute;
+    bottom: -33px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #2196F3;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    left: 0;
+    /* opacity: 0; */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* .curent:hover::after,
+.curent:focus::after {
+    opacity: 1;
+  
+} */
 .header-list  {
     display: flex;
     align-items: center;
@@ -274,7 +295,9 @@ display: flex;
     border-radius: 4px;
 
 }
-.btn:hover {
+.btn:hover,
+.btn:focus
+ {
     background-color: #188CE8;
 }
 .feature-title {
@@ -322,11 +345,39 @@ display: flex;
     padding-right: 15px;
     margin: 0 auto;   
 }
+.conteiner-works-img {
+    position: relative;
+}
 .item {
+
 font-size: 0;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 margin-right: 30px;
+}
+.works-actions-conteiner {
+    position: absolute;
+        width: 370px;
+        height: 70px;
+        top: 1431px;
+    
+        background: rgba(47, 48, 58, 0.8);
+}
+.works-actions {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        color: #FFFFFF;
+
 }
 .team {
     padding-top: 30px;
@@ -422,7 +473,7 @@ margin-bottom: 50px;
     border: 1px solid #AFB1B8;
     cursor: pointer;
     margin-right: 30px;
-    color: #AFB1B8;
+    color: #AFB1B8;;
 }
 
 .button-icon-clients {   
@@ -441,7 +492,9 @@ margin-bottom: 50px;
 }
 .button-icon-clients:hover,
 .button-icon-clients:focus,
-.button-icon:hover {
+.button-icon:hover,
+.button-icon:focus
+{
     fill: #2196F3;
     color: currentColor;
 }
@@ -503,15 +556,18 @@ margin-bottom: 50px;
     padding-right: 0px;
 }
 
-.icon-instagram:hover {
+.icon-instagram:hover,
+.icon-instagram:focus {
     fill: #fff;
 }
-.actions-team button:hover {
+.actions-team button:hover,
+.actions-team button:focus {
     background-color: #2196F3;
     color: #fff;
     
 }
-.actions button:hover {
+.actions button:hover,
+.actions button:focus {
     background-color: #2196F3;
 }
 .button {
@@ -527,7 +583,8 @@ margin-bottom: 50px;
     flex-direction: column;
     
 }
-.button:hover {
+.button:hover,
+.button:focus {
     background-color: #2196F3;
   
 }
@@ -584,7 +641,6 @@ margin-bottom: 50px;
     cursor: pointer;
     background-size: 20px 20px;
     background-position: center;
-    
 }
 .actions .icon-linkedin {
     padding: 0;
@@ -599,7 +655,6 @@ margin-bottom: 50px;
     cursor: pointer;
     background-size: 20px 20px;
     background-position: center;
-    
 }
 
 .mail-footer,
@@ -652,13 +707,15 @@ margin-bottom: 50px;
     border-radius: 4px;
     border-color: transparent;
 }
-.but-li:hover {
+.but-li:hover,
+.but-li:focus {
     color: #fff;
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
-.but-list:hover {
+.but-list:hover,
+.but-list:focus {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
@@ -673,6 +730,7 @@ margin-bottom: 50px;
     padding-right: 24px;
     margin: 0;
     border: 1px solid #EEEEEE;
+
 }
 .portfolio-title {
     font-family: 'Roboto';
@@ -686,13 +744,46 @@ margin-bottom: 50px;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+   
 
+}
+.portfolio-list-overlay {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.portfolio-list-li:hover .portfolio-overlay
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Roboto';
+    height: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding: 63px 24px;
+    line-height: 156%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .portfolio-list-li {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
     font-size: 0;
+  
 
 }
 .portfolio-list-li:nth-child(3n) {
@@ -725,4 +816,57 @@ margin-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+}
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop.is-hidden.modal {
+
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: flex;
+    
+}
+.modal-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon-close { 
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  fill: #000000;
+  
 }
