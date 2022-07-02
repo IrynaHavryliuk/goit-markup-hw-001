@@ -230,6 +230,7 @@ background-image: url(../images/astronaut.svg);
 .header-mail:focus
 {
 color: #2196F3;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-title 
@@ -299,6 +300,7 @@ display: flex;
 .btn:focus
  {
     background-color: #188CE8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feature-title {
     font-family: 'Roboto';
@@ -419,6 +421,7 @@ margin-right: 10px;
 .t-icon-box:focus {
 background-color: #2196F3;
 color: #fff;
+transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-card-prof {
     font-family: 'Roboto';
@@ -489,6 +492,7 @@ margin-bottom: 50px;
     fill: #2196F3;
     border: 1px solid #2196F3;
     border-radius: 4px;
+    transition: color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-icon-clients:hover,
 .button-icon-clients:focus,
@@ -497,6 +501,7 @@ margin-bottom: 50px;
 {
     fill: #2196F3;
     color: currentColor;
+    transition: color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio-footer {
@@ -559,16 +564,19 @@ margin-bottom: 50px;
 .icon-instagram:hover,
 .icon-instagram:focus {
     fill: #fff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .actions-team button:hover,
 .actions-team button:focus {
     background-color: #2196F3;
     color: #fff;
+    transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .actions button:hover,
 .actions button:focus {
     background-color: #2196F3;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button {
     display: flex;
@@ -586,6 +594,7 @@ margin-bottom: 50px;
 .button:hover,
 .button:focus {
     background-color: #2196F3;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .button-icon {
@@ -593,7 +602,8 @@ margin-bottom: 50px;
 } 
 .button-icon:hover,
 .button-icon:focus {
-   fill:  currentColor
+   fill:  currentColor;
+   transition: fill  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .actions-team-list {
     display: flex;
@@ -681,6 +691,7 @@ margin-bottom: 50px;
 .tel-footer:hover
  {
     color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .but-list-li {
     margin-bottom: 50px;
@@ -710,9 +721,10 @@ margin-bottom: 50px;
 .but-li:hover,
 .but-li:focus {
     color: #fff;
-    background: #2196F3;
+    background-color: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .but-list:hover,
 .but-list:focus {
@@ -721,6 +733,7 @@ margin-bottom: 50px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .portfolio {
@@ -749,13 +762,12 @@ margin-bottom: 50px;
 }
 .portfolio-list-overlay {
     position: relative;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 
 .portfolio-list-li:hover .portfolio-overlay
 {
-    opacity: 1;
+    /* opacity: 1; */
     transform: translateY(0);
 }
 
@@ -773,7 +785,7 @@ margin-bottom: 50px;
     padding: 63px 24px;
     line-height: 156%;
     background-color: rgba(33, 150, 243, 0.9);
-    opacity: 0;
+    /* opacity: 0; */
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -797,6 +809,8 @@ margin-bottom: 50px;
  {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .portfolio-text {
