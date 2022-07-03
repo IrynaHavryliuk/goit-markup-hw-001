@@ -149,6 +149,7 @@ background-image: url(../images/astronaut.svg);
     line-height: 1.33;
     letter-spacing: 0.02em;
     color: #212121; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .curent::after {
@@ -190,12 +191,14 @@ background-image: url(../images/astronaut.svg);
     margin-left: auto;
     display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel {
     margin-left: 30px;
     display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail {
@@ -230,7 +233,6 @@ background-image: url(../images/astronaut.svg);
 .header-mail:focus
 {
 color: #2196F3;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-title 
@@ -294,13 +296,12 @@ display: flex;
     letter-spacing: 0.06em;
     margin-top: 30px;
     border-radius: 4px;
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus
  {
     background-color: #188CE8;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feature-title {
     font-family: 'Roboto';
@@ -359,11 +360,10 @@ margin-right: 30px;
 }
 .works-actions-conteiner {
     position: absolute;
-        width: 370px;
-        height: 70px;
-        top: 1431px;
-    
-        background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    top: 1431px;
+    background: rgba(47, 48, 58, 0.8);
 }
 .works-actions {
         font-family: 'Roboto';
@@ -415,13 +415,14 @@ margin-right: 10px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: #AFB1B8;;
+    color: #AFB1B8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .t-icon-box:hover,
 .t-icon-box:focus {
 background-color: #2196F3;
 color: #fff;
-transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .team-card-prof {
     font-family: 'Roboto';
@@ -476,7 +477,8 @@ margin-bottom: 50px;
     border: 1px solid #AFB1B8;
     cursor: pointer;
     margin-right: 30px;
-    color: #AFB1B8;;
+    color: #AFB1B8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-icon-clients {   
@@ -484,6 +486,7 @@ margin-bottom: 50px;
     fill: currentColor;
     width: 106px;
     height: 60px;
+    
 }
 
 .clients-icon:hover,
@@ -492,7 +495,7 @@ margin-bottom: 50px;
     fill: #2196F3;
     border: 1px solid #2196F3;
     border-radius: 4px;
-    transition: color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .button-icon-clients:hover,
 .button-icon-clients:focus,
@@ -501,7 +504,10 @@ margin-bottom: 50px;
 {
     fill: #2196F3;
     color: currentColor;
-    transition: color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.button-icon {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio-footer {
@@ -564,19 +570,21 @@ margin-bottom: 50px;
 .icon-instagram:hover,
 .icon-instagram:focus {
     fill: #fff;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
+
 .actions-team button:hover,
 .actions-team button:focus {
     background-color: #2196F3;
-    color: #fff;
-    transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    color: #fff;     
+}
+.actions-team button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .actions button:hover,
 .actions button:focus {
     background-color: #2196F3;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .button {
     display: flex;
@@ -589,21 +597,23 @@ margin-bottom: 50px;
     margin-right: 10px;
     border-radius: 50%;
     flex-direction: column;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .button:hover,
 .button:focus {
     background-color: #2196F3;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   
 }
 .button-icon {
     fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .button-icon:hover,
 .button-icon:focus {
    fill:  currentColor;
-   transition: fill  250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .actions-team-list {
     display: flex;
@@ -623,6 +633,8 @@ margin-bottom: 50px;
     cursor: pointer;
     background-size: 20px 20px;
     background-position: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .actions .icon-twitter {
     padding: 0;
@@ -637,6 +649,7 @@ margin-bottom: 50px;
     cursor: pointer;
     background-size: 20px 20px;
     background-position: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .actions .icon-facebook {
     padding: 0;
@@ -651,6 +664,7 @@ margin-bottom: 50px;
     cursor: pointer;
     background-size: 20px 20px;
     background-position: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .actions .icon-linkedin {
     padding: 0;
@@ -665,6 +679,7 @@ margin-bottom: 50px;
     cursor: pointer;
     background-size: 20px 20px;
     background-position: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-footer,
@@ -675,6 +690,7 @@ margin-bottom: 50px;
     text-decoration: none;
     font-style: normal;
     letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-footer-li {
     margin-bottom: 9px;
@@ -691,7 +707,7 @@ margin-bottom: 50px;
 .tel-footer:hover
  {
     color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .but-list-li {
     margin-bottom: 50px;
@@ -700,6 +716,7 @@ margin-bottom: 50px;
 }
 .but-list {
     margin: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .but-li {
     font-family: 'Roboto';
@@ -717,6 +734,7 @@ margin-bottom: 50px;
     display: inline-block;
     border-radius: 4px;
     border-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .but-li:hover,
 .but-li:focus {
@@ -724,7 +742,7 @@ margin-bottom: 50px;
     background-color: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .but-list:hover,
 .but-list:focus {
@@ -733,7 +751,7 @@ margin-bottom: 50px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     letter-spacing: 0.03em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     
 }
 .portfolio {
