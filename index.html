@@ -426,6 +426,57 @@
               ></use>
             </svg>
           </button>
+          
+          <form class="form">
+            <div class="form-field">
+             <b class="form-registr">Оставьте свои данные, мы вам перезвоним</b>
+              </div>
+               <div class="form-field">
+                <label for="name">Имя</label>
+               <div class="input-wrap">
+              <input class="form-input" type="text" name="name" id="name" />
+            <svg class="form-icon"  width="18" height="18">
+             <use href="./images/sprite.svg#icon-person-black"></use>
+            </svg>
+                </div>
+              </div>
+            <div class="form-field">
+            <label for="tel">Телефон</label>
+            <div class="input-wrap">
+            <input class="form-input" type="tel" name="tel" id="tel" />
+            <svg class="form-icon"  width="18" height="18">
+            <use href="./images/sprite.svg#icon-phone-black"></use>
+            </svg>
+            </div>
+            </div>
+            <div class="form-field">
+            <label for="mail">Почта</label>
+            <div class="input-wrap">
+            <input class="form-input" type="email" name="mail" id="mail" />
+            <svg class="form-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-email-black"></use>
+            </svg>
+            </div>
+            </div>
+            <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea class="comment"  name="comment" id="comment" rows="4" placeholder="Введите текст"></textarea>
+            </div>
+            
+            <label class="label-checkbox">
+              <input class="checkbox" type="checkbox" name="policy" />
+              <svg class="icon-checkbox">
+                  <use
+                    href="./images/sprite.svg#icon-Vector-6"
+                    weight="16"
+                    height="15"
+                  ></use>
+                </svg>
+              
+              Соглашаюсь с рассылкой и принимаю <a class="link-checkbox" href="">Условия договора</a> </label>
+             
+            <button class="button-field" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </main>
@@ -467,6 +518,23 @@
             <li><button class="icon-linkedin"></button></li>
           </ul>
         </div>
+         <div class="footer-social-icon">
+          <h2 class="footer-social">Подпишитесь на рассылку</h2>
+          <form>
+            <label for="mail"></label>
+            <input class="footer-form" type="email" placeholder="E-mail">
+            <div class="footer-button-send">
+            <button class="button-send" type="submit">Подписаться
+              <svg class="icon-send">
+                  <use
+                    href="./images/sprite.svg#icon-send"
+                    weight="24"
+                    height="24"
+                  ></use>
+                </svg>
+            </button>
+            </div>
+          </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
