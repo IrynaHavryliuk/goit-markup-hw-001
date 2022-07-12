@@ -6,12 +6,12 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.works-list li {
-    margin-right: 30px;
-}
 
 .works-list {
     display: flex;
+    li {
+            margin-right: 30px;
+        }
 }
 
 .works-list .works-list__item:last-child {

@@ -4,10 +4,11 @@
 
 .title-list {
     display: flex;
+    li {
+            margin-right: 30px;
+        }
 }
-.title-list li {
-    margin-right: 30px;
-}
+
 
 .title-list__item {
 
