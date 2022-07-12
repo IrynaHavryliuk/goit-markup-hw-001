@@ -15,7 +15,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <title>Вэб студия</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <style>
       li {
         list-style-type: none; /* Убираем маркеры */
@@ -82,30 +83,30 @@
       <section class="conteiner-title-section">
         <div class="conteiner-title">
           <ul class="title-list">
-            <li class="title-list-li">
-              <h3 class="feature-title">Внимание к деталям.</h3>
-              <p class="feature-text text">
+            <li class="title-list__item">
+              <h3 class="title-list__title">Внимание к деталям.</h3>
+              <p class="title-list__text text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="title-list-li">
-              <h3 class="feature-title">Пунктуальность.</h3>
-              <p class="feature-text text">
+            <li class="title-list__item">
+              <h3 class="title-list__title">Пунктуальность.</h3>
+              <p class="title-list__text text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="title-list-li">
-              <h3 class="feature-title">Планирование.</h3>
-              <p class="feature-text text">
+            <li class="title-list__item">
+              <h3 class="title-list__title">Планирование.</h3>
+              <p class="title-list__text text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="title-list-li">
-              <h3 class="feature-title title">Современные технологии.</h3>
-              <p class="feature-text text">
+            <li class="title-list__item">
+              <h3 class="title-list__title title">Современные технологии.</h3>
+              <p class="title-list__text text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -117,8 +118,8 @@
         <div class="conteiner-works">
           <h2 class="works-title title">Чем мы занимаемся</h2>
           <ul class="works-list">
-            <li class="item">
-              <div class="conteiner-works-img">
+            <li class="works-list__item">
+              <div class="works-list__img">
                 <img
                   src="./images/img-3.jpg"
                   alt="Сайты"
@@ -126,12 +127,12 @@
                   height="294"
                 />
               </div>
-              <div class="works-actions-conteiner">
-                <p class="works-actions">Десктопные приложения</p>
+              <div class="apps">
+                <p class="apps__text">Десктопные приложения</p>
               </div>
             </li>
-            <li class="item">
-              <div class="conteiner-works-img">
+            <li class="works-list__item">
+              <div class="works-list__img">
                 <img
                   src="./images/img-4.jpg"
                   alt="Мобильные приложения"
@@ -139,12 +140,12 @@
                   height="294"
                 />
               </div>
-              <div class="works-actions-conteiner">
-                <p class="works-actions">Мобильные приложения</p>
+              <div class="apps">
+                <p class="apps__text">Мобильные приложения</p>
               </div>
             </li>
-            <li class="item">
-              <div class="conteiner-works-img">
+            <li class="works-list__item">
+              <div class="works-list__img">
                 <img
                   src="./images/img-5.jpg"
                   alt="Приложения для планшетов"
@@ -152,8 +153,8 @@
                   height="294"
                 />
               </div>
-              <div class="works-actions-conteiner">
-                <p class="works-actions">Дизайнерские решения</p>
+              <div class="apps">
+                <p class="apps__text">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
@@ -163,7 +164,7 @@
         <div class="conteiner-teams">
           <h2 class="teams-title title">Наша команда</h2>
           <ul class="teams-list">
-            <li class="item">
+            <li class="works-list__item">
               <img
                 src="./images/img-6.jpg"
                 alt="Сотрудник 1"
@@ -207,7 +208,7 @@
                 </div>
               </div>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <img
                 src="./images/img-7.jpg"
                 alt="Сотрудник 2"
@@ -251,7 +252,7 @@
                 </div>
               </div>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <img
                 src="./images/img-8.jpg"
                 alt="Сотрудник 3"
@@ -295,7 +296,7 @@
                 </div>
               </div>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <img
                 src="./images/img-9.jpg"
                 alt="Сотрудник 4"

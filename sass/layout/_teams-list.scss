@@ -1,0 +1,96 @@
+.conteiner-teams-section {
+    background: #F5F4FA;
+}
+.team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+.team-card {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #212121;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.actions-team {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.actions-team li:not(:last-child) {
+    margin-right: 10px;
+}
+.actions-team button:hover,
+.actions-team button:focus {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.actions-team button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.t-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            background-color: #2196F3;
+            color: #fff;
+    
+        }
+}
+
+
+.team-card-prof {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #757575;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.teams-list {
+    display: flex;
+}
+.button-icon-clients:hover,
+.button-icon-clients:focus,
+.button-icon:hover,
+.button-icon:focus {
+    fill: #2196F3;
+    color: currentColor;
+
+}
+
+.button-icon {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.actions-team-list {
+    display: flex;
+    width: 270px;
+}
+.button-icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-icon:hover,
+.button-icon:focus {
+    fill: currentColor;
+
+}
