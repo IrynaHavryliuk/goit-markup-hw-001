@@ -723,13 +723,11 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .clients-list li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .clients-list li:nth-child(1) {
   padding-left: 15px;
 }
@@ -766,14 +764,13 @@ body {
   padding-bottom: 94px;
 }
 
-.but-list-li li {
-  margin-right: 8px;
-}
-
 .but-list-li {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+}
+.but-list-li li {
+  margin-right: 8px;
 }
 
 .but-list {
@@ -968,11 +965,9 @@ body {
   margin: 0;
   list-style: none;
 }
-
 .actions li {
   padding-right: 10px;
 }
-
 .actions li:last-child {
   padding-right: 0px;
 }

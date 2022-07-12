@@ -21,17 +21,14 @@
 .clients-list {
     display: flex;
     justify-content: center;
-
-}
-
-.clients-list li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.clients-list li:nth-child(1) {
-    padding-left: 15px;
+    li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    li:nth-child(1) {
+            padding-left: 15px;
+        }
 }
 
 .clients-icon {

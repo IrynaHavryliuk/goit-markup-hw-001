@@ -52,15 +52,16 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    li {
+            padding-right: 10px;
+        }
+    
+    li:last-child {
+            padding-right: 0px;
+        }
 }
 
-.actions li {
-    padding-right: 10px;
-}
 
-.actions li:last-child {
-    padding-right: 0px;
-}
 
 .actions .icon-instagram {
     padding: 0;

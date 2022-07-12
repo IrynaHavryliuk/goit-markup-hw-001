@@ -3,16 +3,13 @@
     padding-bottom: 94px;
 }
 
-
-.but-list-li li {
-    margin-right: 8px;
-}
-
-
 .but-list-li {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    li {
+            margin-right: 8px;
+        }
 }
 
 .but-list {
