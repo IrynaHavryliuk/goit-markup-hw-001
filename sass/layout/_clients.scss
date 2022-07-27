@@ -1,41 +1,65 @@
-
 .clients-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     padding-right: 15px;
     padding-left: 15px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .clients {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
 }
 
 .clients-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+
     li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+        width: 100%;
+
+        @media screen and (min-width: 480px) {
+            width: calc((100% - 30px) / 2);
         }
-    li:nth-child(1) {
+
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 3);
+        }
+
+
+    }
+
+
+    @include desktop {
+        li:nth-child(1) {
             padding-left: 15px;
         }
+    }
 }
 
 .clients-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
@@ -43,14 +67,19 @@
     margin-right: 30px;
     color: #AFB1B8;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include desktop {
+        width: 170px;
+    }
+
     &:hover,
     &:focus {
-            color: #2196F3;
-            fill: #2196F3;
-            border: 1px solid #2196F3;
-            border-radius: 4px;
-    
-        }
+        color: #2196F3;
+        fill: #2196F3;
+        border: 1px solid #2196F3;
+        border-radius: 4px;
+
+    }
 }
 
 .button-icon-clients {

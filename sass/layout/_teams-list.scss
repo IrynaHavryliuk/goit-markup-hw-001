@@ -1,15 +1,40 @@
 .conteiner-teams-section {
     background: #F5F4FA;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding: 0;
+    }
 }
+
 .team {
+    display: block;
+    max-width: 480px;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #fff;
-    padding-top: 30px;
+
+
+}
+
+.teams-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    color: #212121;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
 }
 
 .team-card {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -17,25 +42,31 @@
     margin-bottom: 10px;
     text-align: center;
 }
+
 .actions-team {
     display: flex;
     margin: 0;
     justify-content: center;
-    margin-left: 32px;
     margin-top: 16px;
-    li:not(:last-child) {
-            margin-right: 10px;
-        }
-    
+
     button:hover,
     button:focus {
-            background-color: #2196F3;
-            color: #fff;
-        }
-    
+        background-color: #2196F3;
+        color: #fff;
+    }
+
     button {
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @include desktop {
+        margin-left: 32px;
+
+        li:not(:last-child) {
+            margin-right: 10px;
         }
+
+    }
 }
 
 
@@ -48,17 +79,17 @@
     border-radius: 50%;
     color: #AFB1B8;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
-            background-color: #2196F3;
-            color: #fff;
-    
-        }
+        background-color: #2196F3;
+        color: #fff;
+
+    }
 }
 
 
 .team-card-prof {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -67,9 +98,12 @@
     text-align: center;
 }
 
-.teams-list {
-    display: flex;
+@include desktop {
+    .teams-list {
+        display: flex;
+    }
 }
+
 .button-icon-clients:hover,
 .button-icon-clients:focus,
 .button-icon:hover,
@@ -79,17 +113,19 @@
 
 }
 
-
-.actions-team-list {
-    display: flex;
-    width: 270px;
+@include desktop {
+    .actions-team-list {
+        display: flex;
+        width: 270px;
+    }
 }
+
 .button-icon {
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
-            fill: currentColor;
-        }
+        fill: currentColor;
+    }
 }
-

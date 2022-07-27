@@ -1,21 +1,42 @@
 .conteiner-title-section {
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+    }
 }
 
 .title-list {
-    display: flex;
     li {
-            margin-right: 30px;
+        margin-bottom: 30px;
+
+        &:nth-child(4) {
+            margin-bottom: 0;
         }
+
+        @include tablet {
+            width: calc((100% - 30px) / 2);
+            display: flax;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+    }
+
+
+    @media screen and (min-width: 768px) {
+        display: flax;
+        flex-wrap: wrap;
+    }
 }
 
 
 .title-list__item {
 
- &::before {
+    &::before {
         display: flex;
         content: " ";
-        width: 270px;
+        max-width: 450px;
         height: 120px;
         background: #F5F4FA;
         border-radius: 4px;
@@ -23,26 +44,32 @@
         background-position: center;
         background-repeat: no-repeat;
         margin-bottom: 30px;
+
     }
-&:nth-child(1)::before {
-            background-image: url(../images/antenna.svg);
+
+    &:nth-child(1)::before {
+        background-image: url(../images/antenna.svg);
+    }
+
+    &:nth-child(2)::before {
+        background-image: url(../images/clock.svg);
+    }
+
+    &:nth-child(3)::before {
+        background-image: url(../images/diagram.svg);
+    }
+
+    &:nth-child(4)::before {
+        background-image: url(../images/astronaut.svg);
+
+    }
+
+    @include desktop {
+        &:last-child {
+            margin-right: 0px;
         }
-    
-&:nth-child(2)::before {
-            background-image: url(../images/clock.svg);
-        }
-    
-&:nth-child(3)::before {
-            background-image: url(../images/diagram.svg);
-        }
-    
-&:nth-child(4)::before {
-            background-image: url(../images/astronaut.svg);
-   
-        }
-&:last-child {
-                    margin-right: 0px;
-                }
+    }
+
 }
 
 .title-list__title {
@@ -54,6 +81,7 @@
     text-transform: uppercase;
     letter-spacing: 0.03em;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .title-list__text {
