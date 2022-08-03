@@ -29,14 +29,25 @@
   </head>
   <body>
     <header class="header">
-      <a
-            href="https://www.figma.com/file/oTYBECAN79dXy19hzWObO4/Web-Studio-(Version-2.1)"
-            class="logo"
-            ><span class="web">Web</span><span class="studio">Studio</span></a
-          >
+      <div class="page-header">
       <div class="conteiner">
+      <a href="https://www.figma.com/file/oTYBECAN79dXy19hzWObO4/Web-Studio-(Version-2.1)"
+            class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
+      <button class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
+        </svg>
+      </button> 
+      </div>     
+      <div class="menu-container js-menu-container" id="mobile-menu">
         <nav class="header-nav">
-      
+          <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-close" href="./images/sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button> 
           <ul class="header-list">
             <li class="header-list-item">
               <a href="index.html" class="header-link curent link">Студия</a>
@@ -49,24 +60,46 @@
             </li>
           </ul>
         </nav>
-        <a href="mailto:info@devstudio.com" class="header-mail link"
-          ><svg class="mail">
-            <use
-              href="./images/sprite.svg#icon-mail"
-              weight="16"
-              height="12"
-            ></use></svg
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="header-tel link"
-          ><svg class="telephon">
-            <use
-              href="./images/sprite.svg#icon-tel"
-              weight="10"
-              height="16"
-            ></use></svg
-          >+380961111111</a
-        >
+            <a href="tel:+380961111111" class="header-tel link"
+            ><svg class="telephon">
+            <use href="./images/sprite.svg#icon-tel" width="10" height="16"></use></svg>+380961111111</a>
+            <a href="mailto:info@devstudio.com" class="header-mail link"><svg class="mail">
+            <use href="./images/sprite.svg#icon-mail" width="16" height="12"></use></svg>info@devstudio.com</a>
+            <ul class="mobile-soc">
+              <li class="mobile-soc-item">
+                <a href="" class="mobile-soc-link">Instagram</a>
+              </li>
+              <li class="mobile-soc-item">
+                <a href="" class="mobile-soc-link">Twitter</a>
+              </li>
+              <li class="mobile-soc-item">
+                <a href="" class="mobile-soc-link">Facebook</a>
+              </li>
+              <li class="mobile-soc-item">
+                <a href="" class="mobile-soc-link">LinkedIn</a>
+              </li>
+            </ul>
+      </div>
+      <div class="menu-tablet">
+        <ul class="header-list">
+            <li class="header-list-item">
+              <a href="" class="header-link curent link">Студия</a>
+            </li>
+            <li class="header-list-item">
+              <a href="portfolio.html" class="header-link link">Портфолио</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="header-link link">Контакты</a>
+            </li>
+          </ul>
+          <div class="header-tablet">
+          <a href="tel:+380961111111" class="header-tel link"
+            ><svg class="telephon">
+            <use href="./images/sprite.svg#icon-tel" width="10" height="16"></use></svg>+380961111111</a>
+            <a href="mailto:info@devstudio.com" class="header-mail link"><svg class="mail">
+            <use href="./images/sprite.svg#icon-mail" width="16" height="12"></use></svg>info@devstudio.com</a>
+          </div>
+      </div>
       </div>
     </header>
     <main>
@@ -84,6 +117,23 @@
             </li>
           </ul>
           <ul class="but-list-list">
+            <li class="but-list">
+              <button type="button" class="but-li">Дизайн</button>
+            </li>
+            <li class="but-list">
+              <button type="button" class="but-li">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="but-list-tablet">
+            <li class="but-list">
+              <button type="button" class="but-li">Все</button>
+            </li>
+            <li class="but-list">
+              <button type="button" class="but-li">Веб сайты</button>
+            </li>
+            <li class="but-list">
+              <button type="button" class="but-li">Приложения</button>
+            </li>
             <li class="but-list">
               <button type="button" class="but-li">Дизайн</button>
             </li>
@@ -403,7 +453,8 @@
     </main>
     <footer class="footer-back">
       <div class="footer-conteiner">
-        <div>
+        <div class="footer-tablet">
+          <div class="footer-nav">
           <div class="footer-logo">
             <a
               href="https://www.figma.com/file/oTYBECAN79dXy19hzWObO4/Web-Studio-(Version-2.1)"
@@ -429,8 +480,8 @@
               </li>
             </ul>
           </address>
-        </div>
-        <div class="footer-social-icon">
+          </div>
+          <div class="footer-social-icon">
           <h2 class="footer-social">присоединяйтесь</h2>
           <ul class="actions">
             <li><button class="icon-instagram"></button></li>
@@ -439,9 +490,10 @@
             <li><button class="icon-linkedin"></button></li>
           </ul>
         </div>
+        </div>
          <div class="footer-social-icon1">
           <h2 class="footer-social">Подпишитесь на рассылку</h2>
-          <form>
+          <form class="footer-form-tablet">
             <label for="mail"></label>
             <input class="footer-form" type="email" placeholder="E-mail">
             <div class="footer-button-send">
@@ -458,5 +510,13 @@
           </form>
       </div>
     </footer>
+    <script src="./js/modal.js" type="module"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

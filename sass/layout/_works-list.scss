@@ -17,6 +17,10 @@
     @include desktop {
         li {
             margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 }
@@ -40,18 +44,7 @@
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
 
-    &:nth-child(4) {
-        margin-bottom: 0px;
-    }
-
-    @include tablet {
-        width: calc((100% - 30px) / 2);
-        display: flax;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
 }
-
 
 .apps {
     position: absolute;

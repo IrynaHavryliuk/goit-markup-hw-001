@@ -4,11 +4,24 @@
 
     @include desktop {
         padding-top: 94px;
+        padding-bottom: 0;
     }
 }
 
 .title-list {
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include desktop {
+        flex-wrap: nowrap;
+    }
+
     li {
+        width: 100%;
         margin-bottom: 30px;
 
         &:nth-child(4) {
@@ -17,17 +30,12 @@
 
         @include tablet {
             width: calc((100% - 30px) / 2);
-            display: flax;
-            flex-wrap: wrap;
-            gap: 15px;
         }
+
+
     }
 
 
-    @media screen and (min-width: 768px) {
-        display: flax;
-        flex-wrap: wrap;
-    }
 }
 
 
@@ -44,6 +52,14 @@
         background-position: center;
         background-repeat: no-repeat;
         margin-bottom: 30px;
+
+        @include tablet {
+            width: 354px;
+        }
+
+        @include desktop {
+            width: 270px;
+        }
 
     }
 

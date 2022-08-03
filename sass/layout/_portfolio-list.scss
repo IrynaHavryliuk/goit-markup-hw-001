@@ -63,10 +63,13 @@
     }
 
     @include tablet {
-        width: calc((100% - 30px) / 2);
-        display: flax;
         flex-wrap: wrap;
-        gap: 15px;
+        width: calc((100% - 30px) / 2);
+        margin-right: 30px;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
     }
 
     @include desktop {
@@ -75,6 +78,10 @@
         width: 370px;
         margin-bottom: 30px;
         font-size: 0;
+
+        &:nth-child(2n) {
+            margin-right: 30px;
+        }
 
         &:nth-child(3n) {
             margin-right: 0;

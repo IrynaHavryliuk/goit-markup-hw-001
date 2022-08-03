@@ -4,7 +4,36 @@
     padding-bottom: 60px;
 
     @include desktop {
-        padding: 0;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.teams-list {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include desktop {
+        flex-wrap: nowrap;
+    }
+
+    li {
+        width: 100%;
+        margin-bottom: 30px;
+
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
+
+        @include tablet {
+            width: calc((100% - 30px) / 2);
+            margin-bottom: 0;
+        }
+
+
     }
 }
 
@@ -15,7 +44,13 @@
     padding-bottom: 30px;
     background-color: #fff;
 
+    @include tablet {
+        max-width: 768px;
+    }
 
+    @include desktop {
+        max-width: 1200px;
+    }
 }
 
 .teams-title {
@@ -69,7 +104,6 @@
     }
 }
 
-
 .t-icon-box {
     display: flex;
     justify-content: center;
@@ -84,10 +118,8 @@
     &:focus {
         background-color: #2196F3;
         color: #fff;
-
     }
 }
-
 
 .team-card-prof {
     font-weight: 400;
@@ -98,26 +130,12 @@
     text-align: center;
 }
 
-@include desktop {
-    .teams-list {
-        display: flex;
-    }
-}
-
 .button-icon-clients:hover,
 .button-icon-clients:focus,
 .button-icon:hover,
 .button-icon:focus {
     fill: #2196F3;
     color: currentColor;
-
-}
-
-@include desktop {
-    .actions-team-list {
-        display: flex;
-        width: 270px;
-    }
 }
 
 .button-icon {

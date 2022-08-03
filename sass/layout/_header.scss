@@ -1,7 +1,4 @@
 .header {
-    padding-left: 15px;
-    padding-top: 16px;
-    padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
     position: relative;
 
@@ -39,7 +36,6 @@
 
 .web {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
@@ -54,7 +50,6 @@
 
 .studio {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
@@ -72,11 +67,32 @@
     color: var(--accent-color);
 }
 
+.menu-tablet {
+    display: flex;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: flex;
+    }
+
+    @include desktop {
+        display: flex;
+    }
+}
+
 .header-list-item {
     margin-bottom: 32px;
 
     &:last-child {
         margin-bottom: 0px;
+    }
+
+    @include tablet {
+        margin-bottom: 0;
+        margin-right: 50px;
     }
 
     @include desktop {
@@ -97,6 +113,11 @@
     &:hover,
     &:focus {
         color: #2196F3;
+    }
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.33;
     }
 
     @include desktop {
@@ -123,14 +144,29 @@
 }
 
 .header-list {
-    // display: flex;
     align-items: center;
-    // margin-left: 93px;
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+        margin-left: 93px;
+    }
 
     @include desktop {
         display: flex;
         align-items: center;
         margin-left: 93px;
+    }
+}
+
+.header-tablet {
+    @include tablet {
+        display: block;
+    }
+
+    @include desktop {
+        display: flex;
+
     }
 }
 
@@ -148,10 +184,12 @@
         color: #2196F3;
     }
 
-    @include desktop {
+    @include tablet {
         font-size: 14px;
         line-height: 1.33;
         margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -167,10 +205,12 @@
         color: #2196F3;
     }
 
-    @include desktop {
+    @include tablet {
         font-size: 14px;
         line-height: 1.33;
     }
+
+
 }
 
 .header-mail {
@@ -178,16 +218,16 @@
     display: flex;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include desktop {
+        margin-left: 30px;
+    }
 }
 
 .header-tel {
     display: flex;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    @include desktop {
-        margin-left: 30px;
-    }
 }
 
 .mail {
@@ -201,6 +241,8 @@
     fill: #757575;
     fill: currentColor;
     margin-right: 10px;
+
+
 }
 
 .telephon {
