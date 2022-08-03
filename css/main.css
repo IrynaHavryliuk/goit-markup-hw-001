@@ -87,9 +87,12 @@ body.modal-open {
 }
 @media screen and (min-width: 1200px) {
   .page-header {
+    max-width: 1200px;
     margin-left: 15px;
     margin-top: 0;
     margin-bottom: 0;
+    margin: 0 auto;
+    padding-left: 15px;
   }
 }
 
@@ -192,14 +195,16 @@ body.modal-open {
   text-decoration: none;
 }
 
-.conteiner-teams {
+.conteiner-teams,
+.container-clients {
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  .conteiner-teams {
+  .conteiner-teams,
+.container-clients {
     max-width: 768px;
     padding-left: 15px;
     padding-right: 15px;
@@ -207,7 +212,8 @@ body.modal-open {
   }
 }
 @media screen and (min-width: 1200px) {
-  .conteiner-teams {
+  .conteiner-teams,
+.container-clients {
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -262,10 +268,11 @@ body.modal-open {
   .footer-conteiner {
     display: flex;
     max-width: 1200px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     align-items: baseline;
-    justify-content: flex-start;
+    margin: 0 auto;
   }
 }
 
@@ -444,6 +451,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .header-tablet {
     display: flex;
+    margin-left: 300px;
   }
 }
 
@@ -1048,7 +1056,7 @@ body.modal-open {
   position: absolute;
   width: 370px;
   height: 70px;
-  top: 1431px;
+  top: 1463px;
   background: rgba(47, 48, 58, 0.8);
 }
 .apps__text {
@@ -1545,6 +1553,13 @@ body.modal-open {
     margin-left: 76px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 0 auto;
+  }
+}
 
 .footer-logo {
   margin-bottom: 20px;
@@ -1563,6 +1578,11 @@ body.modal-open {
   text-align: center;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    text-align: start;
+  }
 }
 
 .footer-social-icon {
@@ -1603,6 +1623,11 @@ body.modal-open {
   justify-content: center;
   align-self: center;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    text-align: start;
+  }
 }
 
 .address-footer {

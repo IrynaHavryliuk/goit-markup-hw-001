@@ -23,6 +23,12 @@
     @include tablet {
         margin-left: 76px;
     }
+
+    @include desktop {
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin: 0 auto;
+    }
 }
 
 .footer-logo {
@@ -41,6 +47,10 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .footer-social-icon {
@@ -80,6 +90,10 @@
     justify-content: center;
     align-self: center;
     margin-bottom: 20px;
+
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .address-footer {
