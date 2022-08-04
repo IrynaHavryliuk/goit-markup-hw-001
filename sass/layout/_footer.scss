@@ -72,6 +72,7 @@
 
     @include tablet {
         display: block;
+        margin-top: 60px;
     }
 
     @include desktop {
@@ -286,6 +287,10 @@
     color: #FFFFFF;
     border: 0;
 
+    // @include tablet {
+    //     display: block;
+    // }
+
     @include desktop {
         margin-left: 12px;
     }
@@ -296,10 +301,9 @@
     margin-top: 20px;
 
     @include tablet {
-        display: block;
+        display: flex;
+        text-align: center;
         justify-content: center;
-        align-items: center;
-        margin-left: 291px;
     }
 
     @include desktop {

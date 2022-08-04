@@ -111,10 +111,17 @@
 }
 
 .button-list {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    @include mobile {
+        width: 460px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+
+    @include tablet {
+        width: 768px;
+        margin-bottom: 30px;
+    }
 
     @include desktop {
         width: 1200px;

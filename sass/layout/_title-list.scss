@@ -98,6 +98,10 @@
     letter-spacing: 0.03em;
     padding-bottom: 10px;
     text-align: center;
+
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .title-list__text {
