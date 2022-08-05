@@ -1485,6 +1485,9 @@ body.modal-open {
   border-radius: 4px;
 }
 
+.but-list-tablet {
+  display: none;
+}
 .but-list-tablet li {
   margin-right: 8px;
 }
