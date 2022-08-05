@@ -98,6 +98,10 @@
     @include desktop {
         margin-right: 50px;
     }
+
+    &:last-child {
+        margin-right: 0px;
+    }
 }
 
 .header-link {
@@ -162,6 +166,7 @@
 .header-tablet {
     @include tablet {
         display: block;
+        margin-left: 84px;
     }
 
     @include desktop {

@@ -111,6 +111,9 @@
 }
 
 .button-list {
+    padding-left: 15px;
+    padding-right: 15px;
+
     @include mobile {
         width: 460px;
         padding-left: 15px;
