@@ -299,6 +299,8 @@
 .footer-button-send {
     display: inline-flex;
     margin-top: 20px;
+    text-align: center;
+    justify-content: center;
 
     @include tablet {
         display: flex;
