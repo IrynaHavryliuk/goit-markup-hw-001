@@ -68,7 +68,7 @@
 }
 
 .menu-tablet {
-    display: flex;
+    display: none;
 
     @include mobile {
         display: none;

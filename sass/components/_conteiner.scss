@@ -9,10 +9,17 @@
 }
 
 .page-header {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 15px;
-    max-width: 460px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+
+    @include mobile {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 15px;
+        max-width: 460px;
+    }
 
     @include tablet {
         margin-top: 26px;
@@ -50,6 +57,7 @@
 @media (max-width: 767px) {
     .menu {
         display: none;
+        opacity: 0;
     }
 }
 
@@ -110,13 +118,19 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    z-index: 10;
+    z-index: 999;
     overflow-y: scroll;
     background-color: #fff;
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+
 }
+
 
 .menu-container.is-open {
     transform: translateX(0);
@@ -144,6 +158,15 @@
 
 .conteiner-teams,
 .container-clients {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (max-width: 479px) {
+        width: 100%;
+    }
+
     @include mobile {
         max-width: 480px;
         padding-left: 15px;
@@ -180,6 +203,15 @@
 }
 
 .conteiner-title {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (max-width: 479px) {
+        width: 100%;
+    }
+
     @include mobile {
         max-width: 480px;
         padding-left: 15px;
@@ -203,6 +235,15 @@
 }
 
 .footer-conteiner {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (max-width: 479px) {
+        width: 100%;
+    }
+
     @include mobile {
         max-width: 480px;
         padding-left: 15px;
