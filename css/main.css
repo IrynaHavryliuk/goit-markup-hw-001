@@ -219,7 +219,7 @@ body.modal-open {
   margin: 0 auto;
   text-align: center;
 }
-@media (max-width: 479px) {
+@media (min-width: 320px) {
   .conteiner-teams,
 .container-clients {
     width: 100%;
@@ -289,8 +289,6 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .conteiner-title {
     max-width: 768px;
-    padding-left: 0;
-    padding-right: 0;
     margin: 0 auto;
   }
 }
@@ -1345,6 +1343,7 @@ body.modal-open {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .clients-list {
