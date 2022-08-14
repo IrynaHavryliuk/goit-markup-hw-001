@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--primary-whyte-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    margin: 0px;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}

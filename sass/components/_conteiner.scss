@@ -1,0 +1,273 @@
+.container {
+    min-width: 320px;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: auto;
+
+}
+
+.page-header {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    @include mobile {
+
+        max-width: 460px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    @include tablet {
+        max-width: 768px;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        display: flex;
+
+    }
+
+    @include desktop {
+        max-width: 1200px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+}
+
+// .page-header .container {
+//     min-height: 80px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+// }
+
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+        opacity: 0;
+    }
+}
+
+
+.menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+    text-decoration: underline;
+}
+
+.menu-toggle .js-open-menu {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    // top: 16px;
+    right: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    z-index: 999;
+    overflow-y: scroll;
+    background-color: #fff;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+
+}
+
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.conteiner-teams,
+.container-clients {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: 320px) {
+        width: 100%;
+    }
+
+    @include mobile {
+        max-width: 480px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+
+    @include tablet {
+        max-width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+}
+
+.conteiner-works {
+    @media (max-width: 1199px) {
+        display: none;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+}
+
+.conteiner-title {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (max-width: 479px) {
+        width: 100%;
+    }
+
+    @include mobile {
+        max-width: 480px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+
+    @include tablet {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+}
+
+.footer-conteiner {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (max-width: 479px) {
+        width: 100%;
+    }
+
+    @include mobile {
+        max-width: 480px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+    }
+
+    @include tablet {
+        display: block;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    @include desktop {
+        display: flex;
+        max-width: 1200px;
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        align-items: baseline;
+        margin: 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
+
+
+    }
+}

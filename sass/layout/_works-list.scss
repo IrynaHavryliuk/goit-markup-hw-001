@@ -1,0 +1,73 @@
+.works-list__img {
+    position: relative;
+}
+
+@include desktop {
+
+    .works-section,
+    .conteiner-teams-section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.works-list {
+    display: flex;
+
+    @include desktop {
+        li {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+
+.works-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: #212121;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.works-list__item {
+
+    font-size: 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 30px;
+
+    @include desktop {
+        margin-bottom: 0;
+    }
+
+}
+
+.apps {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    top: 1433px;
+    background: rgba(47, 48, 58, 0.8);
+
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        color: #FFFFFF;
+    }
+}

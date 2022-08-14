@@ -1,0 +1,269 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+
+    @include tablet {
+        position: static;
+    }
+
+    @include desktop {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #ECECEC;
+    }
+}
+
+
+.header-icon {
+    display: inline-block;
+    justify-content: flex-end;
+
+}
+
+.header-nav {
+    // display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.web {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    color: #2196F3;
+    letter-spacing: 0.03em;
+
+    @include desktop {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.studio {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    color: black;
+    letter-spacing: 0.03em;
+
+    @include desktop {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.menu-tablet {
+    display: none;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: flex;
+    }
+
+    @include desktop {
+        display: flex;
+    }
+}
+
+.header-list-item {
+    margin-bottom: 32px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    @include tablet {
+        margin-bottom: 0;
+        margin-right: 50px;
+    }
+
+    @include desktop {
+        margin-right: 50px;
+    }
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.header-link {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.33;
+    }
+
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.33;
+    }
+
+}
+
+@include desktop {
+    .curent::after {
+        content: "";
+        position: absolute;
+        bottom: -33px;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #2196F3;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        left: 0;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.header-list {
+    align-items: center;
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+        margin-left: 93px;
+    }
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+        margin-left: 93px;
+    }
+}
+
+.header-tablet {
+    @include tablet {
+        display: block;
+        margin-left: 84px;
+    }
+
+    @include desktop {
+        display: flex;
+        margin-left: 300px;
+
+    }
+}
+
+.header-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-bottom: 32px;
+
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+
+    @include tablet {
+        font-size: 12px;
+        line-height: 1.17;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    @include desktop {
+        font-size: 14px;
+    }
+
+}
+
+.header-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+
+    @include tablet {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+    @include desktop {
+        font-size: 14px;
+    }
+
+}
+
+.header-mail {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include desktop {
+        margin-left: 30px;
+    }
+}
+
+.header-tel {
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail {
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 16px;
+    height: 12px;
+    background-size: contain;
+    fill: #757575;
+    fill: currentColor;
+    margin-right: 10px;
+
+
+}
+
+.telephon {
+    display: block;
+    width: 10px;
+    height: 16px;
+    background-size: contain;
+    fill: #757575;
+    fill: currentColor;
+    margin-right: 10px;
+}

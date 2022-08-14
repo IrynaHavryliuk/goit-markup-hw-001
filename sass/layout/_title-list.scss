@@ -1,0 +1,131 @@
+.conteiner-title-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 0;
+    }
+}
+
+.title-list {
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include desktop {
+        flex-wrap: nowrap;
+    }
+
+    li {
+        width: 100%;
+        margin-bottom: 30px;
+
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
+
+        @include tablet {
+            width: calc((100% - 30px) / 2);
+            margin-bottom: 0;
+
+        }
+
+        @include desktop {
+            margin-bottom: 0;
+
+        }
+
+    }
+
+
+}
+
+
+.title-list__item {
+
+
+    &::before {
+        display: flex;
+        content: " ";
+        max-width: 450px;
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        background-size: 70px 70px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+
+        @include tablet {
+            width: 354px;
+        }
+
+        @include desktop {
+            width: 270px;
+
+        }
+
+    }
+
+    &:nth-child(1)::before {
+        background-image: url(../images/antenna.svg);
+    }
+
+    &:nth-child(2)::before {
+        background-image: url(../images/clock.svg);
+    }
+
+    &:nth-child(3)::before {
+        background-image: url(../images/diagram.svg);
+    }
+
+    &:nth-child(4)::before {
+        background-image: url(../images/astronaut.svg);
+
+    }
+
+    @include desktop {
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+}
+
+.title-list__title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #212121;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding-bottom: 10px;
+    text-align: center;
+
+    @include tablet {
+        text-align: start;
+    }
+}
+
+.title-list__text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+    letter-spacing: 0.03em;
+
+    @include tablet {
+        text-align: start;
+    }
+
+    @include desktop {
+        text-align: start;
+        margin-bottom: 0;
+    }
+}

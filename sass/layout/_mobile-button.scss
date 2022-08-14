@@ -1,0 +1,46 @@
+.mobile-button {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    position: absolute;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    right: 15px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+}
+
+.mobile-soc {
+    display: flex;
+    margin-top: 64px;
+}
+
+.mobile-soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+.mobile-soc-item:not(:last-child):after {
+    content: '';
+    width: 22px;
+    height: 0px;
+    left: 135px;
+    top: 726px;
+    margin-right: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+
+}
